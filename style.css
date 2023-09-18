@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+span{
+    color: green;
+    font-size: 18px;
+}
+
 .main {
     background-color: #f0f0f0;
     padding: 50px 20px;
@@ -9,6 +14,7 @@
 
 .container {
     max-width: 1024px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -18,7 +24,7 @@
 .card {
     flex: 1 1 300px;
     border-radius: 4px;
-    border: 1px solid black;
+    box-shadow: 2px 2px 30px 10px #a9a9a9 ;
 }
 
 .img-card {
@@ -28,13 +34,30 @@
 .img-card img {
     width: 100%;
     height: 100%;
-    border: 4px;
+    border-radius: 4px;
 }
 
-.container-card {
+.conteudo-card {
     padding: 0px 10px;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.preco-card{
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid silver;
+}
+
+.container-carrinho{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid silver;
+    border-radius: 5px;
 }
